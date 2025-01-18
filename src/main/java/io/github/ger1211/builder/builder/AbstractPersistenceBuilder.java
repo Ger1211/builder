@@ -1,4 +1,4 @@
-package com.test.utils.gmc.builder.builder;
+package io.github.ger1211.builder.builder;
 
 import jakarta.persistence.EntityManager;
 

@@ -1,4 +1,4 @@
-package com.test.utils.gmc.builder.model;
+package io.github.ger1211.builder.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

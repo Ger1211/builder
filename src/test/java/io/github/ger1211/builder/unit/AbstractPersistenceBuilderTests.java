@@ -1,8 +1,8 @@
-package com.test.utils.gmc.builder.unit;
+package io.github.ger1211.builder.unit;
 
-import com.test.utils.gmc.builder.BuilderApplicationTests;
-import com.test.utils.gmc.builder.builder.PersonBuilder;
-import com.test.utils.gmc.builder.model.Person;
+import io.github.ger1211.builder.BuilderApplicationTests;
+import io.github.ger1211.builder.builder.PersonBuilder;
+import io.github.ger1211.builder.model.Person;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

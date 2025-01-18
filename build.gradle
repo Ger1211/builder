@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.4.1'
 	id 'io.spring.dependency-management' version '1.1.7'
+	id 'maven-publish'
 }
 
 group = 'com.test.utils.gmc'
@@ -31,6 +32,36 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.jar {
+	manifest {
+		attributes(
+				'Main-Class': 'io.github.ger1211.builder.AbstractPersistenceBuilder'
+		)
+	}
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+			groupId = 'io.github.ger1211'
+			artifactId = 'builder'
+			version = '0.0.1-SNAPSHOT'
+		}
+	}
+	repositories {
+		maven {
+			name = "MavenCentral"
+			url = uri("https://repo.maven.apache.org/maven2")
+
+			credentials {
+				username = project.findProperty("mavenCentralUsername") ?: System.getenv("MAVEN_CENTRAL_USERNAME")
+				password = project.findProperty("mavenCentralPassword") ?: System.getenv("MAVEN_CENTRAL_PASSWORD")
+			}
+		}
+	}
 }
 
 tasks.named('test') {

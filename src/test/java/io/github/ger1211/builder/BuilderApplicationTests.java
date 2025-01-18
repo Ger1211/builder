@@ -1,4 +1,4 @@
-package com.test.utils.gmc.builder;
+package io.github.ger1211.builder;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

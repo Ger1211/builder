@@ -1,6 +1,6 @@
-package com.test.utils.gmc.builder.builder;
+package io.github.ger1211.builder.builder;
 
-import com.test.utils.gmc.builder.model.Person;
+import io.github.ger1211.builder.model.Person;
 
 public class PersonBuilder extends AbstractPersistenceBuilder<Person> {
 
