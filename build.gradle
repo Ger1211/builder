@@ -53,8 +53,8 @@ publishing {
 	}
 	repositories {
 		maven {
-			name = "MavenCentral"
-			url = uri("https://repo.maven.apache.org/maven2")
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/Ger1211/builder")
 
 			credentials {
 				username = project.findProperty("mavenCentralUsername") ?: System.getenv("MAVEN_CENTRAL_USERNAME")
