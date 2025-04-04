@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'io.github.ger1211'
-version = '0.0.6'
+version = '0.0.7'
 
 java {
 	toolchain {
@@ -44,9 +44,6 @@ publishing {
 	publications {
 		mavenJava(MavenPublication) {
 			from components.java
-			groupId = 'io.github.ger1211'
-			artifactId = 'builder'
-			version = '0.0.6'
 		}
 	}
 	repositories {
