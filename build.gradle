@@ -55,8 +55,8 @@ publishing {
 			url = uri("https://maven.pkg.github.com/Ger1211/builder")
 
 			credentials {
-				username = System.getenv("AUTH_USERNAME")
-				password = System.getenv("AUTH_TOKEN")
+				username = System.getenv("USERNAME")
+				password = System.getenv("TOKEN")
 			}
 		}
 	}
