@@ -47,6 +47,7 @@ publishing {
 			groupId = 'io.github.ger1211'
 			artifactId = 'builder'
 			version = '0.0.1'
+			artifact(tasks.jar)
 		}
 	}
 	repositories {
