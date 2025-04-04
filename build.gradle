@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.test.utils.gmc'
-version = '0.0.1'
+version = '0.0.2'
 
 java {
 	toolchain {
@@ -45,7 +45,7 @@ publishing {
 		mavenJava(MavenPublication) {
 			groupId = 'io.github.ger1211'
 			artifactId = 'builder'
-			version = '0.0.1'
+			version = '0.0.2'
 			artifact(tasks.jar)
 		}
 	}
