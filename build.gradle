@@ -43,10 +43,10 @@ tasks.jar {
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
+			from components.java
 			groupId = 'io.github.ger1211'
 			artifactId = 'builder'
 			version = '0.0.2'
-			artifact(tasks.jar)
 		}
 	}
 	repositories {
